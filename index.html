@@ -37,18 +37,22 @@
       // ...
 
 
+
       $("#random-button").on("click", function() {
 
-        var number = Math.floor(Math.random() * 1000) +1;
-        $("#random-number").html(number);
+        var number = Math.floor(Math.random() * 899999999 + 100000000);
+        $("#random-number").prepend("<p>" + number);
+
+        });
+
         
-    
 
       });
 
+
       // ...
 
-    });
+  
 
   </script>
   
