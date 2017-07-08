@@ -37,6 +37,15 @@
       // ...
 
 
+      $("#random-button").on("click", function() {
+
+        var number = Math.floor(Math.random() * 1000) +1;
+        $("#random-number").html(number);
+        
+    
+
+      });
+
       // ...
 
     });
